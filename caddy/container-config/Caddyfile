@@ -1,8 +1,8 @@
-https://domain {
+https://h.sjtusp.com {
 
     basicauth /web* {
-        username <password-hash>
-    }           
+        wangjb $2a$14$CL6c6xiyVm.0vrgI5lYJcOHuiH4ActWN1YjHjtHOT4FMBjp3wucgi
+    }
 
     reverse_proxy /web* https://headscale-ui:8443 {
         transport http {
@@ -10,12 +10,12 @@ https://domain {
         }
     }
 
-    
+
     basicauth /admin* {
-        username <password-hash>
+       wangjb $2a$14$CL6c6xiyVm.0vrgI5lYJcOHuiH4ActWN1YjHjtHOT4FMBjp3wucgi
     }
 
     reverse_proxy /admin* headscale-admin:80
-    
+
     reverse_proxy * http://headscale:8080
-}   
+}
