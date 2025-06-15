@@ -1,4 +1,4 @@
-https://h.sjtusp.com {
+https://h.sp.com {
 
     basicauth /web* {
         wangjb $2a$14$CL6c6xiyVm.0vrgI5lYJcOHuiH4ActWN1YjHjtHOT4FMBjp3wucgi
